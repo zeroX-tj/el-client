@@ -262,3 +262,8 @@ void ELClient::GetWifiStatus(void) {
   Request(CMD_WIFI_STATUS, 0, 0);
   Request();
 }
+
+void ELClient::GetHostname(void) {
+  Request(CMD_HOSTNAME, 0, 0);
+  Request();
+}
